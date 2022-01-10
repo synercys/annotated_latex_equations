@@ -1,3 +1,5 @@
+The file "eqn_annotate.tex" is the main latex file.
+
 This repository provides four examples of annotated equations:
 
 1. [example_prob.tex] A simple one inside the equation construct, in a double column format
@@ -8,3 +10,10 @@ This repository provides four examples of annotated equations:
 The folder, "example_output_figs" includes figures that show the outputs of the above four cases.
 
 Note: the main latex file, "eqn_annotate.tex" includes many latex packages and some definitions that are required.
+
+To build all the examples into a single file, type:
+> make
+
+OR 
+
+> pdflatex (or xelatex) eqn_annotate
