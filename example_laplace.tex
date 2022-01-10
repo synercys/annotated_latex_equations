@@ -1,0 +1,18 @@
+\begin{wrapfigure}{l}{0.5\columnwidth}
+    \vspace{\baselineskip}
+    \begin{equation}
+    \label{eq:laplace_density}
+        \lap (x\ |\ \tikzmarknode{u}{\highlight{red}{$\mu$}}, \tikzmarknode{b}{\highlight{blue}{b}}) = \frac{1}{2b} \mathrm{exp}(-\frac{|x-\mu|}{b}) 
+    \end{equation}
+    \begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
+        % For "mu"
+        \path (u.north) ++ (0,2em) node[anchor=south west,color=red!67] (scalep){\textbf{location parameter, mean}};
+        \draw [color=red!57](u.north) |- ([xshift=-0.3ex,color=red]scalep.south east);
+        % For "b"
+        \path (b.south) ++ (0,-1.5em) node[anchor=north west,color=blue!67] (mean){\textbf{$b >0$, scale parameter}};
+        \draw [color=blue!57](b.south) |- ([xshift=-0.3ex,color=blue]mean.south east);
+    \end{tikzpicture}
+    \vspace{0.5\baselineskip}
+    \caption{An example in the single column format using the wrapfig construct.}
+    \vspace{0.5\baselineskip}
+\end{wrapfigure}

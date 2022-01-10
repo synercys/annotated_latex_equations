@@ -1,0 +1,125 @@
+\documentclass[letterpaper,twocolumn,10pt]{article} 
+
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{calc}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{mathtools, nccmath}
+\usepackage{wrapfig}
+\usepackage{comment}
+
+% To generate dummy text
+\usepackage{blindtext}
+
+
+%color
+%\usepackage[dvipsnames]{xcolor}
+% \usepackage{xcolor}
+
+
+%\usepackage[pdftex]{graphicx}
+\usepackage{graphicx}
+% declare the path(s) for graphic files
+%\graphicspath{{../Figures/}}
+
+% extensions so you won't have to specify these with
+% every instance of \includegraphics
+% \DeclareGraphicsExtensions{.pdf,.jpeg,.png}
+
+% for custom commands
+\usepackage{xspace}
+
+% table alignment
+\usepackage{array}
+\usepackage{ragged2e}
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+\newcolumntype{X}[1]{>{\RaggedRight\hspace*{0pt}}p{#1}}
+
+% color box
+\usepackage{tcolorbox}
+
+
+% for tikz
+\usepackage{tikz}
+%\usetikzlibrary{trees}
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees,mindmap}
+% \usepackage{forest}
+\usepackage[edges]{forest}
+\usetikzlibrary{arrows.meta}
+\colorlet{linecol}{black!75}
+\usepackage{xkcdcolors} % xkcd colors
+
+
+% for colorful equation
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{arrows,shapes}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{calc}
+% Commands for Highlighting text -- non tikz method
+\newcommand{\highlight}[2]{\colorbox{#1!17}{$\displaystyle #2$}}
+%\newcommand{\highlight}[2]{\colorbox{#1!17}{$#2$}}
+\newcommand{\highlightdark}[2]{\colorbox{#1!47}{$\displaystyle #2$}}
+
+% my custom colors for shading
+\colorlet{mhpurple}{Plum!80}
+
+
+% Commands for Highlighting text -- non tikz method
+\renewcommand{\highlight}[2]{\colorbox{#1!17}{#2}}
+\renewcommand{\highlightdark}[2]{\colorbox{#1!47}{#2}}
+
+% Some math definitions
+\newcommand{\lap}{\mathrm{Lap}}
+\newcommand{\pr}{\mathrm{Pr}}
+
+\newcommand{\Tset}{\mathcal{T}}
+\newcommand{\Dset}{\mathcal{D}}
+\newcommand{\Rbound}{\widetilde{\mathcal{R}}}
+
+\begin{document}
+
+\title{Annotated Equations in Latex Using Tikz}
+
+\author{
+{\bf Sibin Mohan}\\
+{https://sibin.github.io/sibin}
+% copy the following lines to add more authors
+% \and
+% {\rm Name}\\
+%Name Institution
+} % end author
+
+\maketitle
+
+% Start with Two-Column Examples
+\blindtext
+\vspace{2\baselineskip}
+
+\input{example_prob}
+
+% More complex anmnotations
+\blindtext
+\blindtext
+\input{example_prob2.tex}
+
+% Single column with more complex examples
+\onecolumn
+
+% Wrapping text arond equations
+\blindtext
+\input{example_laplace.tex}
+
+% Annotated Equations Side-by-Side
+\blindtext
+\input{example_overlay.tex}
+
+\blindtext
+
+\end{document}

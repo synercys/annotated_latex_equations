@@ -1,0 +1,14 @@
+\begin{equation}
+    \vspace{\baselineskip}
+            \label{eq:epsilon}
+                \pr[\tikzmarknode{x}{\highlight{red}{$\mathcal{X}(\cdot)$}}\in \tikzmarknode{s}{\highlight{blue}{$\mathcal{S}$}}] \leq e^\epsilon \cdot \pr[\mathcal{X}(\cdot)\in \mathcal{S}]
+\end{equation}
+\begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
+    % For "X"
+    \path (x.north) ++ (0,2em) node[anchor=south east,color=red!67] (scalep){\textbf{system state}};
+    \draw [color=red!87](x.north) |- ([xshift=-0.3ex,color=red]scalep.south west);
+    % For "S"
+    \path (s.south) ++ (0,-1.5em) node[anchor=north west,color=blue!67] (mean){\textbf{$\mathcal{S} \subseteq \mathrm{Range}(\mathcal{X})$}};
+    \draw [color=blue!57](s.south) |- ([xshift=-0.3ex,color=blue]mean.south east);
+\end{tikzpicture}
+
