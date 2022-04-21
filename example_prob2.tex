@@ -6,11 +6,11 @@
     \end{equation}
     \begin{tikzpicture}[overlay,remember picture,>=stealth,nodes={align=left,inner ysep=1pt},<-]
         % Ts to Td
-        \path (ts.north) ++ (-1.5em,2em) node[anchor=south west,color=red!67] (scalep){\textbf{$\tau_i,\tau' \in \Gamma$}, \textbf{the set of Tasks}};
-        \draw[<->,color=red!57] (ts.north) -- ++(0,0.67)  -| node[] {} (td.north);
+        \path (ts.north) ++ (-1.5em,2em) node[anchor=south west,color=red!67] (ttext){\textbf{$\tau_i,\tau' \in \Gamma$}, \textbf{the set of Tasks}};
+        \draw[<->,color=red!57] (ts.north) |- (ttext.south) -| (td.north);
         % js to jd
-        \path (js.south) ++ (3em,-3.3em) node[anchor=south west,color=blue!67] (scalep){\textbf{$j,j'\in \mathbb{N}$}};
-        \draw[<->,color=blue!57] (js.south) -- ++(0,-0.67)  -| node[] {} (jd.south);
+        \path (js.south) ++ (3em,-3.3em) node[anchor=south west,color=blue!67] (jtext){\textbf{$j,j'\in \mathbb{N}$}};
+        \draw[<->,color=blue!57] (js.south) |- (jtext.north) -| (jd.south);
     \end{tikzpicture}
     \vspace{\baselineskip}
     \caption{A More Complex Example for Annotated Equations, this time inside a figure construct.}
