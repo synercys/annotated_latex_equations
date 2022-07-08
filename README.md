@@ -21,13 +21,6 @@ OR
 The output PDF file (containing all the examples) is named: eqn_annotate.pdf
 
 
-NOTE: the "make" command will show the following errors at the end:
-> I found no \citation commands---while reading file eqn_annotate.aux
-> I found no \bibdata command---while reading file eqn_annotate.aux
-> I found no \bibstyle command---while reading file eqn_annotate.aux
-
-This is due to the fact that the latex files contain no bibtex entries or citations. This is normal. If you include a bib file and one or more citations then the errors will go away.
-
 # Examples #
 
 * [example_prob.tex] A simple one inside the equation construct, in a double column format
