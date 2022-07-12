@@ -20,6 +20,8 @@ OR
 
 The output PDF file (containing all the examples) is named: eqn_annotate.pdf
 
+**Update**: There is now a [Latex package](https://github.com/st--/annotate-equations) that makes it easier to create annotatesd equations! Check it out. They have even [created a demo file that uses the same examples as mine](https://github.com/st--/annotate-equations/blob/main/examples/sibin_demo.tex). 
+
 
 # Examples #
 
